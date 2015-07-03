@@ -1,0 +1,7 @@
+%h1 Edit new item
+
+= simple_form_for @item do |f|
+
+  = render partial: "shared/form", locals: { f: f }
+
+  = f.submit "edit"
