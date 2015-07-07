@@ -29,10 +29,9 @@ group :assets do
   gem 'uglifier'
 end
 
-group :test do
+group :development, :test do
   gem 'rspec-rails'
-  gem 'factory_girl'
-
+  gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'

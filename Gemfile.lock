@@ -69,6 +69,9 @@ GEM
     execjs (2.5.2)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     haml (4.0.6)
       tilt
     haml-rails (0.5.1)
@@ -179,7 +182,7 @@ DEPENDENCIES
   debugger
   devise
   exception_notification
-  factory_girl
+  factory_girl_rails
   haml-rails
   jquery-rails
   paperclip

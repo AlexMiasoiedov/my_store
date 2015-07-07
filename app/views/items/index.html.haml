@@ -17,10 +17,11 @@
       %th Vote
 
     - @item.each do |i|
-      %tr
+      %tr{"data-item_id" => "#{i.id}"}
         %td= i.id
         %td= link_to i.name, item_path(i)
         %td= "#{i.price} $"
-        %td= link_to("delete", item_path(i), method: :delete, data: { confirm: "are you sure?" })
+        %td
+          %button.deleteItem delete
         %td= "Rating: #{i.votes_count}"
         %td= link_to '+', upvote_item_path(i)
